@@ -3,46 +3,109 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Krishna Bhagat Portfolio</title>
+  <title>Krishna Bhagat | Portfolio</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #f4f4f4;
-      color: #222;
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      color: #1f2937;
+      line-height: 1.6;
     }
 
     header {
-      background-color: #1f2937;
+      background: #111827;
       color: white;
       text-align: center;
-      padding: 50px 20px;
+      padding: 70px 20px;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      max-width: 850px;
+      margin: auto;
+      font-size: 18px;
+    }
+
+    nav {
+      background: white;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #111827;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
     }
 
     section {
-      max-width: 900px;
-      margin: 30px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
+      margin-bottom: 50px;
     }
 
     h2 {
-      border-bottom: 2px solid #ddd;
+      font-size: 30px;
+      border-bottom: 3px solid #111827;
       padding-bottom: 10px;
     }
 
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
     .skills span {
-      display: inline-block;
-      background: #e5e7eb;
-      padding: 8px 12px;
-      margin: 5px;
-      border-radius: 6px;
+      background: white;
+      padding: 10px 14px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
     }
 
     .project {
-      margin-bottom: 25px;
+      background: white;
+      padding: 25px;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    }
+
+    .project h3 {
+      margin-top: 0;
+    }
+
+    .project a {
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #2563eb;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #111827;
+      color: white;
     }
   </style>
 </head>
@@ -51,44 +114,94 @@
 
 <header>
   <h1>Krishna Bhagat</h1>
-  <p>Supply Chain Management and Finance student at Rutgers University with experience in healthcare, analytics, sourcing, and operations.</p>
+  <p>
+    Finance and Supply Chain Management student at Rutgers University with experience in healthcare, strategic sourcing, analytics, procurement, and operational improvement.
+  </p>
 </header>
 
-<section>
-  <h2>Skills</h2>
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+</nav>
 
-  <div class="skills">
-    <span>Excel</span>
-    <span>Power BI</span>
-    <span>SQL</span>
-    <span>SAP</span>
-    <span>Qlik Sense</span>
-    <span>Palantir Foundry</span>
-    <span>Salesforce</span>
-    <span>Supply Chain Analytics</span>
-    <span>Strategic Sourcing</span>
-    <span>Procurement</span>
-  </div>
-</section>
+<div class="container">
 
-<section>
-  <h2>Projects</h2>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a Rutgers Business School student studying Finance and Supply Chain Management.
+      My experience includes Johnson & Johnson MedTech, Vertex Pharmaceuticals, Fastenal,
+      and Amneal Pharmaceuticals, where I have worked across analytics, sourcing,
+      procurement, planning, and business operations.
+    </p>
+  </section>
 
-  <div class="project">
-    <h3>Strategic Sourcing Analytics Project</h3>
-    <p>Analyzed over $300M in procurement and marketing spend and supported reporting improvements using Power BI.</p>
-  </div>
+  <section id="skills">
+    <h2>Skills</h2>
 
-  <div class="project">
-    <h3>Supply Chain Analytics Project</h3>
-    <p>Analyzed shipment and trailer data using Excel and SQL to improve operational visibility, delivery performance, and cost efficiency.</p>
-  </div>
+    <div class="skills">
+      <span>Excel</span>
+      <span>Power BI</span>
+      <span>SQL</span>
+      <span>Python</span>
+      <span>SAP</span>
+      <span>Blue Yonder</span>
+      <span>Coupa</span>
+      <span>Palantir Foundry</span>
+      <span>Qlik Sense</span>
+      <span>Salesforce</span>
+      <span>Financial Modeling</span>
+      <span>Forecasting</span>
+      <span>Procurement</span>
+      <span>Strategic Sourcing</span>
+      <span>Supply Chain Analytics</span>
+      <span>Inventory Optimization</span>
+      <span>Project Management</span>
+      <span>Stakeholder Management</span>
+    </div>
+  </section>
 
-  <div class="project">
-    <h3>Rutgers Supply Chain Assessment</h3>
-    <p>Evaluated supply chain strengths, weaknesses, risks, opportunities, sustainability, and improvement areas for a semester-long project.</p>
-  </div>
-</section>
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>Vertex Strategic Sourcing & Procurement Analytics</h3>
+      <p>
+        Analyzed procurement data across more than $300M in spend and 50+ vendors to identify
+        sourcing gaps and improvement opportunities. I also supported a Power BI reporting
+        solution that improved reporting efficiency and procurement visibility.
+      </p>
+      <a href="https://www.vertexpharma.com/" target="_blank">Company Reference</a>
+    </div>
+
+    <div class="project">
+      <h3>Fastenal Supply Chain Analytics</h3>
+      <p>
+        Built reporting using Power BI and SQL to track logistics KPIs, investigate trailer
+        idle time and service delays, and support operational improvements that contributed
+        to better delivery performance and cost savings.
+      </p>
+      <a href="https://www.fastenal.com/" target="_blank">Company Reference</a>
+    </div>
+
+    <div class="project">
+      <h3>RU Solar Supply Chain & Sponsorship Project</h3>
+      <p>
+        Supported supplier outreach, purchasing needs, project deadlines, and sponsorship
+        efforts for a student solar vehicle team while coordinating across engineering and
+        operations groups.
+      </p>
+      <a href="https://rutgers.edu/" target="_blank">Rutgers Reference</a>
+    </div>
+
+  </section>
+
+</div>
+
+<footer>
+  <p>Krishna Bhagat | Rutgers University | Finance & Supply Chain Management</p>
+</footer>
 
 </body>
 </html>
