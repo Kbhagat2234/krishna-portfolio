@@ -8,12 +8,13 @@
   <style>
     * {
       box-sizing: border-box;
+      scroll-behavior: smooth;
     }
 
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f5f7fa;
+      background: #f4f6f8;
       color: #1f2937;
       line-height: 1.6;
     }
@@ -26,8 +27,8 @@
     }
 
     header h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
+      font-size: 44px;
+      margin: 0 0 10px;
     }
 
     header p {
@@ -38,18 +39,18 @@
 
     nav {
       background: white;
-      padding: 15px;
       text-align: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      padding: 15px;
       position: sticky;
       top: 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     }
 
     nav a {
-      margin: 0 15px;
       text-decoration: none;
       color: #111827;
       font-weight: bold;
+      margin: 0 18px;
     }
 
     .container {
@@ -64,8 +65,9 @@
 
     h2 {
       font-size: 30px;
+      margin-bottom: 20px;
       border-bottom: 3px solid #111827;
-      padding-bottom: 10px;
+      padding-bottom: 8px;
     }
 
     .skills {
@@ -84,13 +86,20 @@
     .project {
       background: white;
       padding: 25px;
-      margin: 20px 0;
+      margin-bottom: 20px;
       border-radius: 10px;
       box-shadow: 0 3px 10px rgba(0,0,0,0.08);
     }
 
     .project h3 {
       margin-top: 0;
+      margin-bottom: 5px;
+    }
+
+    .project h4 {
+      margin: 0 0 12px;
+      font-weight: normal;
+      color: #6b7280;
     }
 
     .project a {
@@ -102,10 +111,10 @@
     }
 
     footer {
-      text-align: center;
-      padding: 25px;
       background: #111827;
       color: white;
+      text-align: center;
+      padding: 25px;
     }
   </style>
 </head>
@@ -115,14 +124,14 @@
 <header>
   <h1>Krishna Bhagat</h1>
   <p>
-    Finance and Supply Chain Management student at Rutgers University with experience in healthcare, strategic sourcing, analytics, procurement, and operational improvement.
+    Finance and Supply Chain Management student at Rutgers University with experience in healthcare, procurement, strategic sourcing, analytics, and operations.
   </p>
 </header>
 
 <nav>
   <a href="#about">About</a>
   <a href="#skills">Skills</a>
-  <a href="#projects">Projects</a>
+  <a href="#projects">Experience</a>
 </nav>
 
 <div class="container">
@@ -131,9 +140,9 @@
     <h2>About Me</h2>
     <p>
       I am a Rutgers Business School student studying Finance and Supply Chain Management.
-      My experience includes Johnson & Johnson MedTech, Vertex Pharmaceuticals, Fastenal,
-      and Amneal Pharmaceuticals, where I have worked across analytics, sourcing,
-      procurement, planning, and business operations.
+      Through internships and co-ops at Johnson & Johnson MedTech, Vertex Pharmaceuticals,
+      Fastenal, and Amneal Pharmaceuticals, I have gained experience in business analytics,
+      procurement, strategic sourcing, planning, and supply chain operations.
     </p>
   </section>
 
@@ -155,44 +164,58 @@
       <span>Forecasting</span>
       <span>Procurement</span>
       <span>Strategic Sourcing</span>
-      <span>Supply Chain Analytics</span>
+      <span>Supply Chain</span>
       <span>Inventory Optimization</span>
-      <span>Project Management</span>
+      <span>Process Improvement</span>
       <span>Stakeholder Management</span>
     </div>
   </section>
 
   <section id="projects">
-    <h2>Projects</h2>
+    <h2>Projects & Experience</h2>
 
     <div class="project">
-      <h3>Vertex Strategic Sourcing & Procurement Analytics</h3>
+      <h3>Johnson & Johnson MedTech</h3>
+      <h4>Offer Development Analyst Co-op</h4>
       <p>
-        Analyzed procurement data across more than $300M in spend and 50+ vendors to identify
-        sourcing gaps and improvement opportunities. I also supported a Power BI reporting
-        solution that improved reporting efficiency and procurement visibility.
+        Analyzed and validated more than 1,000 pricing, sales, utilization, and contract records
+        across thousands of hospital accounts using Excel, Qlik Sense, and Palantir Foundry.
+        The work supported reporting accuracy, trend identification, and internal business decision-making.
       </p>
-      <a href="https://www.vertexpharma.com/" target="_blank">Company Reference</a>
+      <a href="https://www.jnj.com/" target="_blank">Visit Johnson & Johnson</a>
     </div>
 
     <div class="project">
-      <h3>Fastenal Supply Chain Analytics</h3>
+      <h3>Vertex Pharmaceuticals</h3>
+      <h4>Strategic Sourcing Process Excellence Co-op</h4>
       <p>
-        Built reporting using Power BI and SQL to track logistics KPIs, investigate trailer
-        idle time and service delays, and support operational improvements that contributed
-        to better delivery performance and cost savings.
+        Worked on procurement market intelligence by analyzing Coupa data across more than $300M
+        in spend and 50+ vendors to identify sourcing gaps and improvement opportunities.
+        I also helped build Power BI reporting that improved procurement visibility and reporting efficiency.
       </p>
-      <a href="https://www.fastenal.com/" target="_blank">Company Reference</a>
+      <a href="https://www.vrtx.com/" target="_blank">Visit Vertex Pharmaceuticals</a>
     </div>
 
     <div class="project">
-      <h3>RU Solar Supply Chain & Sponsorship Project</h3>
+      <h3>Fastenal</h3>
+      <h4>Procurement Analyst Co-op</h4>
       <p>
-        Supported supplier outreach, purchasing needs, project deadlines, and sponsorship
-        efforts for a student solar vehicle team while coordinating across engineering and
-        operations groups.
+        Supported procurement, logistics, and delivery activities across a $2M+ spend category and
+        50+ customer accounts. I also built Power BI and SQL reporting around logistics KPIs to help
+        identify service delays, improve delivery performance, and support cost-saving decisions.
       </p>
-      <a href="https://rutgers.edu/" target="_blank">Rutgers Reference</a>
+      <a href="https://www.fastenal.com/" target="_blank">Visit Fastenal</a>
+    </div>
+
+    <div class="project">
+      <h3>Amneal Pharmaceuticals</h3>
+      <h4>Global Supply Chain Intern</h4>
+      <p>
+        Supported supply chain planning across more than 2,000 SKUs and eight product groups using SAP,
+        Blue Yonder, Python, and Excel. I also worked on inventory forecasting and analysis that helped
+        identify supply and demand gaps and reduce excess inventory.
+      </p>
+      <a href="https://amneal.com/" target="_blank">Visit Amneal Pharmaceuticals</a>
     </div>
 
   </section>
